@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 @each $font-key, $font-value in $font-size {
-    .fs-#{$font-value} {
+    .fs-#{$font-key} {
       font-size: $font-value;
     }
 
