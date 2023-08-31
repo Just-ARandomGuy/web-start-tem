@@ -3,26 +3,26 @@
 @use "typography" as *;
 @use "sizes" as *;
 
-@function clr($colors, $color...) {
+@function clr($color...) {
   @if (map.has-key($colors, $color...)) {
     @return map.get($colors, $color...);
   } @else {
-    @error '#{$colors} does not have that color';
+    @error 'color map does not have that color';
   }
 }
 
-@function fs($font-sizes, $font-size...) {
+@function fs( $font-size...) {
   @if (map.has-key($font-sizes, $font-size...)) {
     @return map.get($font-sizes, $font-size...);
   } @else {
-    @error '#{$font-sizes} does not have that font-size';
+    @error 'font size map does not have that font-size';
   }
 }
 
-@function size($sizes, $size...) {
+@function size($size...) {
   @if (map.has-key($sizes, $size...)) {
     @return map.get($sizes, $size...);
   } @else {
-    @error '#{$sizes} does not have that size';
+    @error 'size map does not have that size';
   }
 }

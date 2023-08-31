@@ -2,6 +2,6 @@
   margin-top: var(--flow-spacer, 1em);
 }
 
-.flow[data-spacing="small"]{
-  --flow-spacer: .25rem;
+.flow[data-spacing="small"] {
+  --flow-spacer: 0.25rem;
 }
